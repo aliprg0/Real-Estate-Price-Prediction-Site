@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.P.D</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+  </head>
+<body>
+   <div class="container">
+    <h2>Real Estate Price Detection</h2>
+    <div class="row">    
+        <div class="col-25">    
+          <label for="fnor">Number of Bedrooms: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="fnor" name="numberofbedrooms" class="lolobolo" placeholder="Number of Bedrooms">    
+        </div>    
+      </div>    
+      <div class="row">    
+        <div class="col-25">    
+          <label for="fnobth">Number of Bathrooms: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="fnobth" name="numberofbathrooms" placeholder="Number of Bathrooms">    
+        </div>    
+      </div>    
+      <div class="row">    
+        <div class="col-25">    
+          <label for="ftq">Total Square Feet: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="ftq" name="totalsquarefeet" placeholder="Total Sqare Feet">    
+        </div>    
+      </div>    
+      <div class="row">    
+        <div class="col-25">    
+          <label for="fyb">Year Built: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="fyb" name="yearbuilt" placeholder="Year Built">    
+        </div>    
+      </div>    
+      <div class="row">    
+        <div class="col-25">    
+          <label for="fty">Tax Year: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="fty" name="txyear" placeholder="Tax Year">    
+        </div>    
+      </div>    
+      
+      <div class="row">    
+        <div class="col-25">    
+          <label for="fi">Insurance: </label>    
+        </div>    
+        <div class="col-75">    
+          <input type="number" id="fi" name="insurance" placeholder="Insurance">    
+        </div>    
+      </div>    
+      <div id="wrapper">
+        <label for="yes_no_radio">Does the Home Have A Basement?</label>
+      <p>
+      <input type="radio" name="yes_no" value="1" checked>Yes</input>
+      </p>
+      <p>
+      <input type="radio" name="yes_no" value="0">No</input>
+      </p>
+      </div>
+      <div class="row">    
+        <input type="submit" onclick="read_inputs()" value="Submit">    
+      </div>    
+    </div> 
+    <div class="price-section" id="estimatedprice"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+  </body>
+</html>

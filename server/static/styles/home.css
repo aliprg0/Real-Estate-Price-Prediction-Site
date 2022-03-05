@@ -1,0 +1,81 @@
+body
+{
+  font-family: "Open Sans";
+  background-color: yellow;
+}
+#wrapper
+{
+  border: 1px solid #888;
+  display: inline-block;
+  padding:20px;
+  
+}
+
+
+h2{
+    font-size: 2em;
+}
+* {    
+    box-sizing: border-box;    
+  }    
+      
+  input[type=number], select, textarea {    
+    width: 100%;    
+    padding: 12px;    
+    border: 1px solid rgb(70, 68, 68);    
+    border-radius: 4px;    
+    resize: vertical;    
+  }    
+
+      
+  label {    
+    padding: 12px 12px 12px 0;    
+    display: inline-block;    
+    font-size: 1.6em;
+  }    
+      
+  input[type=submit] {    
+    background-color: rgb(37, 116, 161);    
+    color: white;    
+    padding: 12px 20px;    
+    border: none;    
+    border-radius: 6px;    
+    cursor: pointer;    
+    float: right;    
+  }    
+      
+  input[type=submit]:hover {    
+    background-color: #45a049;    
+  }    
+      
+  .container {    
+    border-radius: 5px;    
+    background-color: greenyellow;    
+    padding: 20px;    
+  }    
+      
+  .col-25 {    
+    float: left;    
+    width: 25%;    
+    margin-top: 6px;    
+  }    
+      
+  .col-75 {    
+    float: left;    
+    width: 75%;    
+    margin-top: 6px;    
+  }    
+      
+  .row:after {    
+    content: "";    
+    display: table;    
+    clear: both;    
+  }    
+
+  .price-section {
+
+    width: 100%;
+    background-color:darkorange ;
+    text-align: center;
+    font-size: 2.5em;
+  }
